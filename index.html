@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiratesOfOcean</title>
+    <style>
+        body {
+            height: 100vh;
+            background: #11A49B;
+            background: #34e89e;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(45deg, #0f3443, #34e89e);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(45deg, #0f3443, #34e89e);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */)
+        }
+        textarea {
+            width: 80%;
+            display: block;
+            height: 10vh;
+            margin: 2rem;
+            padding: 1rem;
+        }
+        img {
+            width: 20%;
+            height: 40vh;
+        }
+        h1{
+            text-align: center;
+            color: blanchedalmond;
+        }
+
+        #output {
+            border: 1px solid blanchedalmond;
+            height: 10vh;
+            width: 80%;
+            margin: 2rem;
+            padding: 1rem;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Learn How Pirates Speaks!</h1>
+    <hr>
+    <center><img src="/images/pirate2.png" alt="no image found"></center>
+    <textarea id="txt-input" placeholder="Type your sentence in English and we will convert it to Shakespearen English"></textarea>
+    <center><button style="border-radius: 2rem; display: block;" id="btn-translate">Translate</button></center>
+    <br>
+    <div style="font-size: larger;color: blanchedalmond; text-align: center;">After translation the text is 👇 </div>
+    <div id="output"></div>
+
+
+
+
+
+    <script src="/app.js" type="text/javascript"></script>    
+</body>
+</html>

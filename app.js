@@ -4,6 +4,7 @@ var txtOutput = document.querySelector("#output")
 
 var serverURL = "https://api.funtranslations.com/translate/pirate.json"
 
+
 function getTranslationURL(text) {
     return serverURL + "?" + "text=" + text
 }
@@ -19,7 +20,7 @@ function clickHandler() {
    fetch(getTranslationURL(inputText))
    .then(response => response.json())
    .then(json => {
-       var translatedText = json.contents.text;
+       var translatedText = json.contents.translated;
         txtOutput.innerText = translatedText })
    .catch(errorHandler)     
 };
